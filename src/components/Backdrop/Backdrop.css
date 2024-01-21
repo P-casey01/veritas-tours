@@ -1,0 +1,15 @@
+/* Backdrop.css */
+
+.backdrop {
+    height: 100vh; /* Full viewport height */
+    background: url('../../Images/Backdrop.jpeg') no-repeat center center fixed; /* Background image fixed */
+    background-size: cover; /* Cover the entire div */
+    position: relative; /* Ensure it's positioned correctly in the document flow */
+    z-index: -1; /* Send it behind other content */
+}
+
+/* After the backdrop */
+.after-backdrop {
+    height: 100vh; /* Additional full viewport height */
+    background-color: wheat; /* Plain burgundy background */
+}

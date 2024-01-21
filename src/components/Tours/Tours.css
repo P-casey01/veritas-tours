@@ -1,0 +1,47 @@
+/* Tours.css */
+
+.tours-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    gap: 20px; /* Space between grid items */
+    padding: 20px; /* Padding around the entire grid */
+}
+
+.tour {
+    background-color: var(--soft-white); /* Background color for each tour */
+    border: 1px solid var(--neutral-gray); /* Border for each tour */
+    border-radius: 8px; /* Rounded corners for each tour */
+    overflow: hidden; /* Keeps the content within the border-radius */
+}
+
+.tour-image-container {
+    width: 100%; /* Full width of the grid column */
+    height: 200px; /* Fixed height for images */
+    overflow: hidden; /* Hide overflow to maintain fixed height */
+}
+
+.tour-image {
+    width: 100%; /* Make the image fill the container */
+    height: 100%; /* Make the image fill the container */
+    object-fit: cover; /* Ensures the image covers the container without stretching */
+}
+
+.tour-info {
+    padding: 15px; /* Padding within each info box */
+}
+
+.tour-info h3 {
+    margin-top: 0; /* Remove default top margin from h3 */
+    color: var(--burgundy); /* Title color */
+}
+
+.tour-info p {
+    color: var(--neutral-gray); /* Paragraph text color */
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    .tours-section {
+        grid-template-columns: 1fr; /* 1 column on small screens */
+    }
+}

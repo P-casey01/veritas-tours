@@ -1,0 +1,40 @@
+/* AboutDerry.css */
+
+.about-derry-container {
+    margin-top: 1%; /* Adjust this value as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+}
+
+.about-derry {
+    margin: 2em auto; /* Center the section and provide top and bottom margin */
+    padding: 1em;
+    text-align: center;
+    max-width: 800px; /* Limit width */
+    background-color: white; /* Background color */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: opacity 1s ease-in-out; /* Smooth transition */
+}
+
+.about-derry.fade-in {
+    opacity: 1; /* Fully visible when the element is in the viewport */
+}
+
+.about-derry.fade-out {
+    opacity: 0; /* Hidden when the element is not in the viewport */
+}
+
+.about-derry h2 {
+    margin-bottom: 1em;
+    color: var(--burgundy); /* Example: Using a color variable from Global.css */
+}
+
+.about-derry p {
+    color: var(--neutral-gray); /* Example: Using a color variable from Global.css */
+    line-height: 1.5; /* Spacing between lines for better readability */
+}
+
+/* You can add additional styling as needed to fit your site's design */

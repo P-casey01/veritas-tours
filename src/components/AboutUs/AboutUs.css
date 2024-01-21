@@ -1,0 +1,81 @@
+/* AboutUs.css */
+:root {
+    --aboutus-image-scale: 70%; /* Default scale, adjust as needed */
+}
+
+.about-us {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2em 0;
+}
+
+.about-section {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center the content */
+    margin-bottom: 2em;
+    width: 80%; /* Adjust to control the overall width */
+}
+
+.about-section:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+
+.fade-in {
+    opacity: 1; /* Fully visible when the element is in the viewport */
+    transition: opacity 1s ease-in-out; /* Smooth transition */
+}
+
+.fade-out {
+    opacity: 0; /* Hidden when the element is not in the viewport */
+    transition: opacity 1s ease-in-out;
+}
+
+.about-text-container {
+    flex-basis: 50%; /* Each takes up half of the container */
+    padding: 15px;
+    background-color: white; /* Background color */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin: 10px; /* Optional: Adjust margin as needed */
+}
+
+.about-text {
+    color: var(--neutral-gray);
+    font-size: 1em;
+    text-align: center; /* Center all text within this container */
+    /* Other styling as needed */
+}
+
+.about-text h1 {
+    color: var(--burgundy); /* Apply the burgundy color to h1 tags */
+    /* Other styling as needed for h1 */
+}
+
+.about-image-container {
+    flex-basis: 50%;
+    display: flex;
+    justify-content: center; /* Center content inside */
+    padding: 15px;
+}
+
+.about-image-container img {
+    width: var(--aboutus-image-scale); /* Use the custom property for scaling */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-section {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .about-text-container, .about-image-container {
+        width: 100%;
+        padding: 10px;
+    }
+}

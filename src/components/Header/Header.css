@@ -1,0 +1,44 @@
+/* Header Styles */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 55%;
+    margin: 0 auto;
+    height: auto;
+    background-color: var(--burgundy);
+    border-radius: 15px; /* Add rounded edges */
+}
+.header-text {
+    color: white;
+    font-size: 1.5rem;
+    margin-left: 20px; /* Adds some space between the logo and the text */
+}
+
+.logo-container {
+    flex: 1; /* Flex grow */
+    display: flex;
+    justify-content: flex; /* Align logo to the start */
+    transform: translateX(90px);
+}
+
+.logo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+nav {
+    flex: 1; /* Flex grow */
+    display: flex;
+    justify-content: center; /* Center the navigation links */
+    gap: 20px; /* Spacing between navigation links */
+}
+
+nav a {
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: none;
+    font-weight: bold;
+}
